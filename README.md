@@ -9,6 +9,7 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
 
 ## Table of Contents
 - [Project Title](#project-title)
+
 - [Introduction](#introduction)
 - [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
@@ -16,30 +17,69 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
   - [Installation](#installation)
 - [Usage](#usage)
   - [Pre-training](#pre-training)
-    
-    git clone https://github.com/afia2023/Afia--CSCI680-Assignment2
-    cd Afia--CSCI680-Assignment2
+To start the pre-training process, execute the following commands in sequence:
+```bash
+# Extract method codes from source files
+python Method_extractor.py
 
-    
+# Convert CSV data to JSON format
+python json_conversion.py
 
+# Preprocess the dataset
+python Preprocess_dataset.py
+
+# Maintain indentation with special tokens
+python special_Token_TAB.py
+
+# Apply the masking logic
+python Masked.py
+
+# Train the CodeT5 model
+python T5_2.py
   - [Fine-tuning](#fine-tuning)
-  - [Generating Predictions](#generating-predictions)
-- [Outputs](#outputs)
-- [Contributing](#contributing)
+# Dataset CodeGlux extraction
+python CodeGlux.py 
+
+# Dataset preprocessing
+python Finetune_preprocess.py
+
+# Pretrained Best_model_1 is used for fine tunning 
+
+python Train_CodeT5.py
+
+# Evaluation 
+
+python eval.py
+
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
 ### Dependencies
-Describe any prerequisites, libraries, or any other dependencies.
+This project requires Python 3.8 or later. Dependencies include:
+
+transformers
+torch
+datasets
+numpy
+pandas
 
 ### Installation
-Step-by-step series of examples and explanations about how to get a development env running.
-
+To set up your environment, follow these steps:
+Clone the repository:
 ```bash
-git clone https://yourrepositorylinkhere.com
-cd your-project-name
+git clone https://github.com/afia2023/Afia--CSCI680-Assignment2
+cd Afia--CSCI680-Assignment2
+
+Create a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install the required packages:
 pip install -r requirements.txt
+
+
 
 
