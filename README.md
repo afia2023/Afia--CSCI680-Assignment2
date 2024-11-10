@@ -7,6 +7,9 @@
 ## Introduction
 This project enhances the CodeT5 model's ability to predict if conditions in Python code through specialized pre-training and fine-tuning phases. The dataset derived from CodeXGLUE was fine-tuned over 10 epochs, focusing on identifying and inserting logical conditions accurately. Output evaluations for three checkpoints are available in CSV format, showcasing the model's performance on the entire dataset, though only the first five indices are detailed in the CSV files. This README provides an overview of the methodologies and key findings, guiding users through the project's structured approach and its implications for automated coding tools.
 
+Pre-training Task: The primary dataset utilized for the pre-training phase is Big_Dataset1.json. This dataset has undergone extensive preprocessing and includes the application of masking logic to prepare it for the training process.
+
+Fine-Tuning Task: For fine-tuning, the dataset used is Finetune_processed_dataset.json.
 ## Table of Contents
 - [Project Title](#project-title)
 
