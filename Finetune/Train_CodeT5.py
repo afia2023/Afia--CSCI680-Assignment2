@@ -53,9 +53,7 @@ def tokenize_data(dataframe, tokenizer):
 
     return tokenized_dataset
 
-# Load the pre-trained tokenizer and model
-# tokenizer = AutoTokenizer.from_pretrained("Salesforce/codet5-small")
-# model = AutoModelForSeq2SeqLM.from_pretrained("Salesforce/codet5-small")
+
 
 tokenizer = AutoTokenizer.from_pretrained("best_model_1")
 model = AutoModelForSeq2SeqLM.from_pretrained("best_model_1")
