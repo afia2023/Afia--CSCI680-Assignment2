@@ -9,8 +9,8 @@ val_data = dataset["validation"]
 test_data = dataset["test"]
 
 # Save each split to a local JSON file if needed
-train_data.to_json("Code_train.json")
-val_data.to_json("Code_validation.json")
-test_data.to_json("Code_test.json")
+train_data.to_json("Finetune_processed_dataset.json")
+val_data.to_json("Finetune_Test_dataset.json")
+test_data.to_json("Fine_Val_dataset.json")
 
 print("Datasets downloaded and saved as JSON files.")
