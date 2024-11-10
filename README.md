@@ -41,7 +41,51 @@ python Masked.py
 # Train the CodeT5 model
 python T5_2.py
 
+```
+
 ### Fine-tuning
+```bash
+# Dataset CodeGlux extraction
+python CodeGlux.py 
+
+# Dataset preprocessing
+python Finetune_preprocess.py
+
+# Pretrained Best_model_1 is used for fine tunning 
+
+python Train_CodeT5.py
+```
+
+### Evaluation
+```bash
+python eval.py
+```
+
+### Dependencies
+This project requires Python 3.8 or later. Dependencies include:
+
+transformers
+torch
+datasets
+numpy
+pandas
+
+### Installation
+To set up your environment, follow these steps:
+Clone the repository:
+```bash
+git clone https://github.com/afia2023/Afia--CSCI680-Assignment2
+cd Afia--CSCI680-Assignment2
+
+Create a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install the required packages:
+pip install -r requirements.txt
+
+
 
 
 
