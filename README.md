@@ -18,7 +18,7 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
 - [Usage](#usage)
   - [Pre-training](#pre-training)
   - [Fine-tuning](#fine-tuning)
-  - -[Evaluation] 
+  - [Evaluation](#Evaluation]
 
 ### Pre-training
 To start the pre-training process, execute the following commands in sequence:
@@ -40,6 +40,9 @@ python Masked.py
 
 # Train the CodeT5 model
 python T5_2.py
+
+### Fine-tuning
+
 
 
 
