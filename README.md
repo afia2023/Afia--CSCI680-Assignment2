@@ -19,6 +19,7 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
   - [Pre-training](#pre-training)
   - [Fine-tuning](#fine-tuning)
   - [Evaluation](#Evaluation)
+- [Assignment](#Assignment)
 
 ### Pre-training
 To start the pre-training process, execute the following commands in sequence:
@@ -84,6 +85,13 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 Install the required packages:
 pip install -r requirements.txt
+
+```
+
+### Assignment
+
+The assignment pdf report has been added as -Assignment2(Afia Farjana).pdf
+
 
 
 
