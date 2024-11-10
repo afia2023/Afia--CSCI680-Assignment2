@@ -16,7 +16,8 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
   - [Installation](#installation)
 - [Usage](#usage)
   - [Pre-training](#pre-training)
-    git clone https://github.com/afia2023/Afia--CSCI680-Assignment2.git
+    
+    git clone https://github.com/afia2023/Afia--CSCI680-Assignment2
     cd Afia--CSCI680-Assignment2
 
     
