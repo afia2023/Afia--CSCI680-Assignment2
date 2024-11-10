@@ -17,6 +17,10 @@ This project enhances the CodeT5 model's ability to predict if conditions in Pyt
   - [Installation](#installation)
 - [Usage](#usage)
   - [Pre-training](#pre-training)
+  - [Fine-tuning](#fine-tuning)
+  - -[Evaluation] 
+
+### Pre-training
 To start the pre-training process, execute the following commands in sequence:
 ```bash
 # Extract method codes from source files
@@ -36,7 +40,10 @@ python Masked.py
 
 # Train the CodeT5 model
 python T5_2.py
-  - [Fine-tuning](#fine-tuning)
+
+### Fine-tuning
+Detail your fine-tuning steps here:
+```bash
 # Dataset CodeGlux extraction
 python CodeGlux.py 
 
@@ -47,8 +54,8 @@ python Finetune_preprocess.py
 
 python Train_CodeT5.py
 
-# Evaluation 
-
+### [Evaluation]
+```bash
 python eval.py
 
 - [License](#license)
